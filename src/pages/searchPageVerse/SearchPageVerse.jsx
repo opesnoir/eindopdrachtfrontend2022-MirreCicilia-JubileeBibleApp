@@ -2,9 +2,9 @@ import React from 'react';
 
 const SearchPageVerse = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <h1> codeer hier de zoekpagina - vers </h1>
+        </>
     );
 };
 

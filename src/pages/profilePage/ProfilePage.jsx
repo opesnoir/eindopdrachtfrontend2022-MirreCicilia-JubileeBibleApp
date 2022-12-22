@@ -2,9 +2,9 @@ import React from 'react';
 
 const ProfilePage = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <h1> codeer hier de profielpagina </h1>
+        </>
     );
 };
 

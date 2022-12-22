@@ -2,9 +2,9 @@ import React from 'react';
 
 const AboutMe = () => {
     return (
-        <div>
-
-        </div>
+        <>
+            <h1> codeer hier de over mij pagina </h1>
+        </>
     );
 };
 

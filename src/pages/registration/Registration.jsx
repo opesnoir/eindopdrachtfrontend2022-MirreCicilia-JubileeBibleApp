@@ -2,9 +2,9 @@ import React from 'react';
 
 const Registration = () => {
     return (
-        <div>
-
-        </div>
+        <>
+            <h1> codeer hier de registratiepagina </h1>
+        </>
     );
 };
 
