@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')
+/*Kleurenpallet:
+Indigo dye: #1D3D54 */
+
+.navbar-container{
+    height: 100px;
+    width: 1512px;
+    max-width: 100%;
+    display: block;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none solid #1D3D54;
+    font-family: 'Open Sans', sans-serif;
+    margin: 2rem auto;
+    background-color: white;
+    outline: #1D3D54 dashed 1px;
+}
+
+ul{
+    padding: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    text-decoration: none solid #1D3D54;
+    word-spacing: 1px;
+    text-align: left;
+    height: 100px;
+    width: 70px;
+    padding: 40px 11px 40px 11px;
+}
+

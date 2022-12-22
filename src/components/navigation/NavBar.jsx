@@ -1,6 +1,7 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 import "./NavBar.module.css";
+import JubileeLogo from "../../assets/JubileeBibleApp-transparant.png";
 
 const NavBar = ({auth}) => {
 
@@ -10,14 +11,17 @@ const NavBar = ({auth}) => {
 
     return (
         <>
-            <nav>
-                <ul>
+            <nav className="navbar">
+                <div className="navbar-container">
+                <ul className="navbar-content">
                     <li><NavLink to="/" className={navLink}>Home</NavLink></li>
                     <li><NavLink to="/about-me" className={navLink}>Over mij</NavLink></li>
+                    {/*<img className="navbar-logo" src={JubileeLogo} alt="Jubilee BibleApp Logo"/>*/}
                     <li><NavLink to="/search-page-term" className={navLink}>Zoek</NavLink></li>
-                    <li><NavLink to="/registration" className={navLink}>Registreer/Login</NavLink></li>
+                    <li><NavLink to="/registration" className={navLink}>Registreer / Login</NavLink></li>
                     {auth && <li><NavLink to="/profile-page" className={navLink}>Profielpagina</NavLink></li>}
                 </ul>
+                </div>
             </nav>
         </>
     );
