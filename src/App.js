@@ -32,9 +32,6 @@ function App() {
           <Route path="/search-page-verse" element={<SearchPageVerse/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
-        <h1>Hallo</h1>
-        <p>Begin hier met coderen!</p>
-
       </>
   );
 }

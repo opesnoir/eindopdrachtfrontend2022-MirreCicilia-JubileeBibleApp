@@ -4,6 +4,8 @@ Indigo dye: #1D3D54
 Falu red: #860E0E
 Marmalade Glaze: #623a1f
 Graham Cracker:  #C1A47F
+Humbrol 130 White: #f7f0f0
+White Color: #FFFFFF
 */
 
 .navbar-container{
@@ -12,12 +14,12 @@ Graham Cracker:  #C1A47F
     max-width: 100%;
     display: block;
     box-sizing: border-box;
-    font-size: 16px;
-    line-height: 22px;
+   /* font-size: 16px;
+    line-height: 22px;*/
     text-decoration: none solid #1D3D54;
     font-family: 'Open Sans', sans-serif;
     margin: 2rem auto;
-    background-color: white;
+    background-color:  #f7f0f0;
     outline: #1D3D54 dashed 1px;
 }
 
@@ -26,20 +28,23 @@ ul{
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    background-color:  #f7f0f0;
 }
 
 li{
     display: flex;
     flex-direction: row;
     font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 22px;
     text-decoration: none solid #1D3D54;
     word-spacing: 1px;
     text-align: left;
-    height: 100px;
-    width: 70px;
+    height: 50px;
+    width: 90px;
     padding: 40px 11px 40px 11px;
+    background-color:  #f7f0f0;
 }
 
 nav a {
@@ -57,4 +62,16 @@ nav a:focus {
     color:#860E0E;
     font-weight: bold;
 }
+
+img{
+    height: 100px;
+    width: 100px;
+    max-height: 100px;
+}
+
+/*
+.user-icon{
+    width: 2%;
+    height: 2%;
+}*/
 
