@@ -14,8 +14,8 @@ const NavBar = ({auth}) => {
 
     return (
         <>
-            <nav className="navbar">
-                <div className="navbar-container">
+            <nav>
+                <div>
                 <ul className="navbar-content">
                     <li><NavLink to="/" className={navLink}>Home</NavLink></li>
                     <li><NavLink to="/about-me" className={navLink}>Over mij</NavLink></li>

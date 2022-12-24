@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+
+
 /*Kleurenpalet:
 Kleurpalet 1:
 primary- Indigo dye: #1D3D54
@@ -18,39 +20,44 @@ Humbrol 130 White: #f7f0f0
 White Color: #FFFFFF
 */
 
-.notfoundItemTitle{
-    color: #002855;
+.footerContainer{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    font-size: 45px;
     font-family: 'Inter', sans-serif;
+    font-size: 18px;
     font-weight: bold;
-    padding: 20px 10px;
-    margin: 20px 20px;
+    color: #f7f0f0;
+    background-color: #002855;
+    padding: 50px 50px;
+    line-height: 10px;
+    margin: 10px 0 0 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
 }
 
-.notfoundItemTekst{
-    color: #002855;
+.footerContentLink{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #f7f0f0;
+    text-decoration: none;
+}
+.footerContainerTwo{
+    padding-left: 60%;
+}
+
+.footerContentCopy{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    font-size: 25px;
-    font-family: 'Inter', sans-serif;
-    margin: 20px 15px;
-    padding: 20px 30px;
-    text-align: center;
-    line-height: 50px;
+    justify-content: flex-end;
 }
-
-.notfoundItemImg{
-    height: auto;
-    width: 100%;
-    max-width: 100%;
-    display: block;
-    box-sizing: border-box;
-}
-
+/*
 .notfoundContainer{
     display: flex;
     background-color: #002855;
@@ -62,11 +69,4 @@ White Color: #FFFFFF
     padding: 50px 50px;
     margin: 120px 120px;
     background-color: #f7f0f0;
-}
-
-.rood404{
-    color: #860E0E;
-}
-
-
-
+}*/

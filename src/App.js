@@ -9,6 +9,7 @@ import SearchPageTerm from "./pages/searchPageTerm/SearchPageTerm";
 import SearchPageVerse from "./pages/searchPageVerse/SearchPageVerse";
 import NavBar from "./components/navigation/NavBar"
 import ProfilePage from "./pages/profilePage/ProfilePage";
+import Footer from "./components/footer/Footer";
 
 //stappen:
 // stap 1: mappenstructuur aanmaken
@@ -17,23 +18,24 @@ import ProfilePage from "./pages/profilePage/ProfilePage";
 
 function App() {
 
-  const isLoggedin = false;
+    const isLoggedin = false;
 
-  return (
-      <>
-        <NavBar/>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/about-me" element={<About/>}/>
-          <Route path="/favorites" element={isLoggedin === true ? <Favorites/> : <Navigate to="/"/>}/>
-          <Route path="/registration" element={<Registration/>}/>
-          <Route path="/profile-page" element={isLoggedin === true ? <ProfilePage/> : <Navigate to="/"/>}/>
-          <Route path="/search-page-term" element={<SearchPageTerm/>}/>
-          <Route path="/search-page-verse" element={<SearchPageVerse/>}/>
-          <Route path="*" element={<NotFound/>}/>
-        </Routes>
-      </>
-  );
+    return (
+        <>
+            <NavBar/>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/about-me" element={<About/>}/>
+                <Route path="/favorites" element={isLoggedin === true ? <Favorites/> : <Navigate to="/"/>}/>
+                <Route path="/registration" element={<Registration/>}/>
+                <Route path="/profile-page" element={isLoggedin === true ? <ProfilePage/> : <Navigate to="/"/>}/>
+                <Route path="/search-page-term" element={<SearchPageTerm/>}/>
+                <Route path="/search-page-verse" element={<SearchPageVerse/>}/>
+                <Route path="*" element={<NotFound/>}/>
+            </Routes>
+            <Footer/>
+        </>
+    );
 }
 
 export default App;
