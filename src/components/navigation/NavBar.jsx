@@ -1,7 +1,8 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-import "./NavBar.module.css";
+import styles from "./NavBar.module.css";
 import JubileeLogo from "../../assets/JubileeBibleApp-transparant.png";
+
 /*import {ReactComponent as UserIcon} from "../../assets/user-regular.svg";*/
 /*import {ReactComponent as UserIcon} from "../../assets/user-125.svg"*/
 
@@ -18,7 +19,7 @@ const NavBar = ({auth}) => {
                 <ul className="navbar-content">
                     <li><NavLink to="/" className={navLink}>Home</NavLink></li>
                     <li><NavLink to="/about-me" className={navLink}>Over mij</NavLink></li>
-                    <img className="navbar-logo" src={JubileeLogo} alt="Jubilee BibleApp Logo"/>
+                    <img className={styles.navbarLogo} src={JubileeLogo} alt="Jubilee BibleApp Logo"/>
                     <li><NavLink to="/search-page-term" className={navLink}>Zoek</NavLink></li>
                     {/*<UserIcon className="user-icon"/>*/}
                     {/*<UserIcon/>*/}
