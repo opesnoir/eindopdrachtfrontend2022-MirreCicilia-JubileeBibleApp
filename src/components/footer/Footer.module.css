@@ -28,7 +28,7 @@ White Color: #FFFFFF
     font-weight: bold;
     color: #f7f0f0;
     background-color: #002855;
-    padding: 50px 50px;
+    padding: 25px 30px;
     line-height: 10px;
     margin: 10px 0 0 0;
     position: fixed;
@@ -57,16 +57,3 @@ White Color: #FFFFFF
     flex-direction: row;
     justify-content: flex-end;
 }
-/*
-.notfoundContainer{
-    display: flex;
-    background-color: #002855;
-    flex-direction: row;
-    justify-content: center;
-}
-.notfoundContent{
-    width: 60%;
-    padding: 50px 50px;
-    margin: 120px 120px;
-    background-color: #f7f0f0;
-}*/

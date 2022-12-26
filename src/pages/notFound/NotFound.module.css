@@ -18,16 +18,33 @@ Humbrol 130 White: #f7f0f0
 White Color: #FFFFFF
 */
 
-.notfoundItemTitle{
-    color: #002855;
+.notfoundContainer{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: #002855;
+}
+.notfoundContent{
+    width: 60%;
+    padding: 50px 50px;
+    margin: 120px 120px;
+    background-color: #f7f0f0;
+}
+
+.rood404{
+    color: #860E0E;
+}
+
+.notfoundItemTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 10px;
+    margin: 20px 20px;
+    color: #002855;
     font-size: 45px;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
-    padding: 20px 10px;
-    margin: 20px 20px;
 }
 
 .notfoundItemTekst{
@@ -44,29 +61,14 @@ White Color: #FFFFFF
 }
 
 .notfoundItemImg{
+    box-sizing: border-box;
+    display: block;
     height: auto;
     width: 100%;
     max-width: 100%;
-    display: block;
-    box-sizing: border-box;
 }
 
-.notfoundContainer{
-    display: flex;
-    background-color: #002855;
-    flex-direction: row;
-    justify-content: center;
-}
-.notfoundContent{
-    width: 60%;
-    padding: 50px 50px;
-    margin: 120px 120px;
-    background-color: #f7f0f0;
-}
 
-.rood404{
-    color: #860E0E;
-}
 
 
 

@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import styles from "./NotFound.module.css";
-import imageRam from "../../assets/Ram-pexels-johannes-havn-3218340-2.jpg"
+import imageRam from "../../assets/pagenotfound-ram-pexels-johannes-havn-3218340-2.jpg";
 import {useNavigate} from "react-router-dom";
 
 
