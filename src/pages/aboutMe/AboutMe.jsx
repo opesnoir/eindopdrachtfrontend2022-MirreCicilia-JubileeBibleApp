@@ -1,6 +1,6 @@
-import React from 'react';
-import styles from "./AboutMe.module.css"
-import imageSheep from "../../assets/aboutme-sheep-pexels-arthur-swiffen-12550240.jpg"
+import React from "react";
+import styles from "./AboutMe.module.css";
+import imageSheep from "../../assets/aboutme-sheep-pexels-arthur-swiffen-12550240.jpg";
 
 
 const AboutMe = () => {
