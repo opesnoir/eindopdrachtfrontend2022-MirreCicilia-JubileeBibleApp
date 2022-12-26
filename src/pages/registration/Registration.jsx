@@ -9,6 +9,9 @@ import {useForm} from "react-hook-form";
     return null;
 }*/
 
+/*deze methode werkt: {errors?.name?.message}
+deze ook: {errors[name]}*/
+
 const Registration = () => {
 
     const {handleSubmit, formState:{errors}, register} = useForm();
@@ -75,7 +78,8 @@ const Registration = () => {
                                     message: "Het wachtwoord bevat minimaal 8 tekens",
                                 },
                             })}/>
-
+                        {errors?.name?.message}
+                        {errors[name]}
                     </div>
                     <div>
                         <p>Het wachtwoord bevat minimaal 8 tekens, waarvan 1 hoofdletter en 1 leesteken.</p>
