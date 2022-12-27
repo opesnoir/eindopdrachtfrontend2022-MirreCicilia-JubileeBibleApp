@@ -76,6 +76,8 @@ White Color: #FFFFFF
     box-sizing: border-box;
     display: block;
     height: auto;
+    padding-bottom: 75px;
+    margin-bottom: 40px;
     width: 100%;
     max-width: 100%;
 }
