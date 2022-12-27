@@ -12,6 +12,7 @@ const Registration = () => {
 
     const {handleSubmit, register, formState:{errors} } = useForm();
     const [password, setPassword] = useState(" ");
+    const [confirmPassword, setConfirmPassword] = useState(" ")
 
     const onSubmit = (data) => {
         console.log(data);
@@ -72,13 +73,24 @@ const Registration = () => {
                         type="password"
                         name="password"
                         id="password-field"
-                        placeholder="Wachtwoord"
+                        placeholder="Wachtwoord:"
                         onChange={e=> setPassword(e.target.value)}
                     /></label>
+
+                <label htmlFor="confirm-password-field">
+                    <input
+                        type="password"
+                        name="confirmpassword"
+                        id="password-field"
+                        placeholder="Bevestig wachtwoord:"
+                        onChange={e=> setConfirmPassword(e.target.value)}
+                    /></label>
+
                     <PasswordChecklist
                         rules={["minLength","specialChar","capital"]}
                         minLength={8}
                         value={password}
+                        valueAgain={confirmPassword}
                         messages={{
                             minLength: "Het wachtwoord bevat minimaal 8 karakters",
                             specialChar: "Het wachtwoord bevat minimaal 1 leesteken",
