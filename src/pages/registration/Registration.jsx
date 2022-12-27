@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./Registration.module.css";
 import imageSheep from "../../assets/register-sheep-pexels-trinity-kubassek-288621.jpg";
 import {useForm} from "react-hook-form";
+import PasswordChecklist from "react-password-checklist";
 
 
 
@@ -10,6 +11,7 @@ import {useForm} from "react-hook-form";
 const Registration = () => {
 
     const {handleSubmit, register, formState:{errors} } = useForm();
+    const [password, setPassword] = useState(" ");
 
     const onSubmit = (data) => {
         console.log(data);
@@ -71,25 +73,19 @@ const Registration = () => {
                         name="password"
                         id="password-field"
                         placeholder="Wachtwoord"
-                        {...register("password",{
-                            required:{
-                                value: true,
-                                message: "Dit veld is verplicht"
-                            },
-                            minLength: {
-                                value: 8,
-                                message: "Het wachtwoord bevat minimaal 8 tekens",
-                            },
-                            pattern:{
-                                value: ,
-                                message: "Het wachtwoord bevat minimaal 1 hoofdletter en 1 leesteken",
-                            },
-                        })}
+                        onChange={e=> setPassword(e.target.value)}
+                    /></label>
+                    <PasswordChecklist
+                        rules={["minLength","specialChar","capital"]}
+                        minLength={8}
+                        value={password}
+                        messages={{
+                            minLength: "Het wachtwoord bevat minimaal 8 karakters",
+                            specialChar: "Het wachtwoord bevat minimaal 1 leesteken",
+                            capital: "Het wachtwoord bevat minimaal 1 hoofdletter",
+                        }}
                     />
-                </label>
-                {errors.password && <p> {errors.password.message} </p>}
                 <button type="submit">Registreren</button>
-
             </form>
 
         </>
