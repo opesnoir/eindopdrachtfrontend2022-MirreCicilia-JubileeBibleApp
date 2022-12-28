@@ -76,12 +76,15 @@ White Color: #FFFFFF
 .registrationFormItem{
     display: flex;
     flex-direction: column;
-    text-align: center;
     padding: 6px 20px;
     margin: 5px 10px;
 }
 
-
+input{
+    font-size: 20px;
+    color: #002855;
+    padding: 10px 10px;
+}
 .registrationItemPasswordChecklistContent{
     display: flex;
     flex-direction: row;
@@ -112,7 +115,7 @@ display: inline-block;
     letter-spacing: 1px;
     border: #062948;
     padding: 8px 24px;
-    margin: 20px 10px 10px;
+    margin: 60px 10px 10px 10px;
     border-radius: 10px;
     box-shadow: 2px 5px 9px rgba(0, 0, 0, 0.2);
 }
@@ -127,7 +130,7 @@ display: inline-block;
     letter-spacing: 1px;
     border: #860E0E;
     padding: 8px 24px;
-    margin: 20px 10px 10px;
+    margin: 60px 10px 10px 10px;
     font-family: 'Inter', sans-serif;
     border-radius: 10px;
     text-transform: uppercase;

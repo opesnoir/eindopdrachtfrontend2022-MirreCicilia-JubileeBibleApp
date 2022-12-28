@@ -2,6 +2,8 @@ import React, {useRef, useState} from "react";
 import styles from "./Registration.module.css";
 import imageSheep from "../../assets/register-sheep-pexels-trinity-kubassek-288621.jpg";
 import {useForm} from "react-hook-form";
+import {AiOutlineEye} from "react-icons/ai"
+import {AiOutlineEyeInvisible} from "react-icons/ai"
 
 
 const Registration = () => {
@@ -91,9 +93,13 @@ const Registration = () => {
                                             }
                                         )}
                                     />
+                                    <AiOutlineEye/>
+                                    <AiOutlineEyeInvisible/>
+
                                     {errors.password && <p>{errors.password.message}</p>}
                                 </label>
                                 <label className={styles.registrationFormItem} htmlFor="confirmpassword">
+
                                     <input
                                         type="password"
                                         name="confirmpassword"
@@ -109,6 +115,8 @@ const Registration = () => {
                                                 message: "De wachtwoorden komen niet overeen",
                                             })}
                                     />
+                                    <AiOutlineEye/>
+                                    <AiOutlineEyeInvisible/>
                                     {errors.confirmpassword && <p>{errors.confirmpassword.message}</p>
                                     }
 
