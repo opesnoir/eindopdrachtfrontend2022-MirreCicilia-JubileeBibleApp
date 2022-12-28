@@ -32,8 +32,9 @@ const Registration = () => {
                                 je persoonlijke Jubilee account.</p>
                         </div>
 
-                        <form className={styles.registrationFormContainer} onSubmit={handleSubmit(onSubmit)} noValidate>
-                            <label htmlFor="name-field">
+                        <div className={styles.registrationFormContainer}>
+                        <form className={styles.registrationFormContent} onSubmit={handleSubmit(onSubmit)} noValidate>
+                            <label className={styles.registrationFormItem} htmlFor="name-field">
                                 <input
                                     type="text"
                                     name="name"
@@ -48,7 +49,7 @@ const Registration = () => {
                                 />
                                 {errors.name && <p>{errors.name.message}</p>}
                             </label>
-                            <label htmlFor="email-field">
+                            <label className={styles.registrationFormItem} htmlFor="email-field">
                                 <input
                                     type="email"
                                     name="email"
@@ -68,7 +69,7 @@ const Registration = () => {
                                 />
                                 {errors.email && <p>{errors.email.message}</p>}
                             </label>
-                            <label htmlFor="password-field">
+                            <label className={styles.registrationFormItem} htmlFor="password-field">
                                 <input
                                     type="password"
                                     name="password"
@@ -76,7 +77,7 @@ const Registration = () => {
                                     placeholder="Wachtwoord:"
                                     onChange={e => setPassword(e.target.value)}
                                 /></label>
-                            <label htmlFor="confirm-password-field">
+                            <label className={styles.registrationFormItem} htmlFor="confirm-password-field">
                                 <input
                                     type="password"
                                     name="confirmpassword"
@@ -84,21 +85,25 @@ const Registration = () => {
                                     placeholder="Bevestig wachtwoord:"
                                     onChange={e => setConfirmPassword(e.target.value)}
                                 /></label>
-                                <PasswordChecklist className={styles.registrationItemPasswordChecklist}
-                                                   rules={["minLength", "specialChar", "capital"]}
+
+                            <div className={styles.registrationItemPasswordChecklistContainer}>
+                                <PasswordChecklist className={styles.registrationItemPasswordChecklistContent}
+                                                   rules={["minLength", "specialChar", "number"]}
                                                    minLength={8}
                                                    value={password}
                                                    valueAgain={confirmPassword}
                                                    messages={{
-                                                       minLength: "Het wachtwoord bevat minimaal 8 karakters",
-                                                       specialChar: "Het wachtwoord bevat minimaal 1 leesteken",
-                                                       capital: "Het wachtwoord bevat minimaal 1 hoofdletter",
+                                                       minLength: "karakters",
+                                                       specialChar: "leesteken",
+                                                       number: "cijfer",
                                                    }}
                                 />
-                            <div>
+                            </div>
+                            <div className={styles.registrationItemButtonContainer}>
                                 <button className={styles.registrationItemButton} type="submit">Registreren</button>
                             </div>
                         </form>
+                        </div>
                     </div>
                 </div>
             </div>

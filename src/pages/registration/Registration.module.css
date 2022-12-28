@@ -64,13 +64,74 @@ White Color: #FFFFFF
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     padding: 20px 30px;
 }
+.registrationItemPasswordChecklistContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.registrationFormItem{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 6px 20px;
+    margin: 5px 10px;
+}
+
+
+.registrationItemPasswordChecklistContent{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+
+.registrationContent{
+display: inline-block;
+}
+
+
+.registrationItemButtonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .registrationItemButton{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 60px 35px 40px;
+    background-color: #062948;
+    color: #f7f0f0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
+    border: #062948;
+    padding: 8px 24px;
+    margin: 20px 10px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 9px rgba(0, 0, 0, 0.2);
+}
+
+.registrationItemButton:hover{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #860E0E;
+    color: #f7f0f0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: #860E0E;
+    padding: 8px 24px;
+    margin: 20px 10px 10px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 2px 5px 9px rgba(0, 0, 0, 0.5);
 }
 
 .registrationItemImg{
@@ -82,3 +143,4 @@ White Color: #FFFFFF
     width: 100%;
     max-width: 100%;
 }
+
